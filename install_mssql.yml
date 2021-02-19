@@ -40,11 +40,11 @@
 
       - name: to add the mssql to the path
         lineinfile:
-          PATH: ~/.bash_profile
+          path: ~/.bash_profile
           Line: export PATH="$PATH:/opt/mssql-tools/bin
 
 
       - name: to add the mssql to the path 2nd step
         lineinfile:
-          PATH: ~/.bashrc
-          Line: export PATH="$PATH:/opt/mssql-tools/bin
+          path: ~/.bashrc
+          line: export PATH="$PATH:/opt/mssql-tools/bin
